@@ -1,0 +1,161 @@
+.banner{
+    margin-top: 4%;
+    height: 85vh;
+    width: 100%;
+}
+.img-background{
+    width: 100%;
+    height: 92%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    -webkit-mask-image: -webkit-linear-gradient(top,#141414 36%,transparent);
+    object-fit: fill;
+}
+.modal-banner{
+    left: 25%;
+    height: 90%;
+    position: fixed;
+    top: 5%;
+    margin: auto;
+    z-index: 1000;
+    background-color: rgb(43, 41, 41);
+    width: 50%;
+    border-radius: 10px;
+}
+.banner-content{
+    margin-top: 4%;
+    height: 645px;
+    height: 100%;
+}
+
+.movie-title{
+    color: white;
+    font-size: 2.8rem;
+    margin: 0%;
+    padding:15px;
+    z-index: 1;
+}
+.movie-overview{
+    color: white;
+    font-size: 1.3rem;
+    padding:15px;
+
+}
+.control-btns{
+    /* min-width: 20% !important; */
+    display: flex;
+    padding: 15px;
+    min-width: 20%;
+}
+.btn-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    height: 45px;
+    width: 125px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.btn-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    height: 45px;
+    width: 150px;
+    background-color: transparent;
+    color: rgb(255, 254, 254);
+    background-color: rgba(147, 130, 130,0.5);
+    border: 0px solid rgb(141, 127, 127);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.about{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px;
+    margin: 0%;
+
+}
+.about-banner{
+    z-index: 1;
+    position: relative;
+    bottom: -220px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 50px;
+    align-self: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.45);
+    width: 50%;
+}
+.btn-1:hover{
+    background-color: rgb(238, 231, 231);
+}
+.btn-2:hover{
+    background-color: rgba(147, 130, 130,0.3);
+}
+@media only screen and (max-width:700px) {
+    .control-btns{
+        width: 300px;
+    }
+    .movie-title{
+        font-size: 50px;
+    }
+}
+
+
+@media (width<=600px) {
+.movie-title{
+        width: 300px;
+        font-size: 20px;
+        font-weight: 700;
+}
+.btn-1{
+    width: 90px !important; 
+    height: 35px !important;
+}
+.btn-1 img{
+    height: 15px !important;
+
+}
+.btn-1 p{
+    font-size: 15px;
+    font-size: 500 !important;
+}
+.btn-2{
+    width: 110px !important; 
+    height: 35px !important;
+}
+.btn-2 img{
+    height: 15px !important;
+}
+.btn-2 p{
+    font-size: 15px;
+    font-size: 500 !important;
+}
+.about-banner{
+
+    bottom: -50px !important;
+    padding-left: 0px;
+}
+.img-background{
+    object-fit: cover;
+    height: 50%;
+}
+.banner{
+    height: 60vh;
+}
+
+}

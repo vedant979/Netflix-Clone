@@ -1,0 +1,75 @@
+.navBar{
+    /* position: fixed !important; 
+     z-index: 2 !important;  */
+    margin: 0% auto;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top:0; 
+    z-index:2  !important; 
+    box-shadow: inset 0px 20px 24px -14px #000;
+}
+.left-nav-menu{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-items-left, .nav-items-right{
+    padding-bottom: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+.right-nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
+    margin-right: 30px;
+}
+.search-bar{
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.search-bar input[type="text"]{
+    background-color: black;
+    border: 1px solid white;
+    width: 250px;
+    padding: 5px;
+    padding-left:30px;
+}
+.search-bar img{
+    position: absolute;
+    right:259px;
+}
+.active{
+    font-weight: 500;
+}
+.nav_black{
+    transition: 0.2s ease-in;
+    background-color: rgb(20, 20, 20);
+}
+.btn-signin{
+    padding: 7px 13px 7px 13px;
+    border: 1px transparent;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    margin-right: 25px;
+    transition: 0.2s;
+}
+.btn-signin:hover{
+    background-color: rgb(209, 3, 3);
+}

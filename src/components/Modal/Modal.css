@@ -1,0 +1,140 @@
+.modal-banner{
+    box-shadow: 0 0 1rem rgba(0,0,0,.6), 0 4px 4px rgba(0,0,0,.5);
+
+}
+.modal-banner-container{
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.icons{
+    cursor: pointer;
+}
+.icons:hover{
+    fill: rgb(198, 192, 192);
+}
+.background-img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+    object-fit: fill;
+    -webkit-mask-image: -webkit-linear-gradient(top, rgb(20, 20, 20) 36%, transparent);
+    border-radius: 3px;
+}
+
+.movie_name{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.modal-details{
+    position: relative;
+    top: 300px;
+    z-index: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    justify-content: space-evenly;
+    height: 150px;
+}
+.control-btns-modal{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.likes{
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(83, 216, 83);
+}
+.btn-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    height: 45px;
+    width: 125px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.modal-container{
+    z-index: 20 !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.movie-abt{
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.close-btn{
+    margin: 5px;
+    float: right;
+}
+
+@media only screen and (max-width:600px) {
+    .modal-banner-container{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .modal-banner{
+        position: static;
+        width:90%;
+        /* left: 0;
+        top: 0; */
+        height: 80%;
+        z-index: 1000 !important;
+    }
+    .control-btns-modal{
+        width: 250px;
+    }
+    .movie-abt{
+        font-size: 13px;
+        text-overflow: ellipsis;
+        margin-bottom: 5px;
+    }
+    .bottom-container{
+        width: 113%;
+    }
+    .modal-details{
+        top: 200px;
+    }
+    .background-img{
+        /* position: static; */
+        margin-right: -45px !important;
+        object-fit: cover;
+    }
+    .modal-details{
+        width: 100%;
+    }
+    .movie_name{
+        font-size: 20px;
+    }
+    .likes{
+        font-size: 17px;
+    }
+    .control-btns-modal{
+        justify-content: flex-start;
+    }
+
+}

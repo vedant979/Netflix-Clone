@@ -1,0 +1,139 @@
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-container{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 430px;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    background-color: rgba(1,1,1,0.8);
+}
+.sign-in-head{
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+}
+.header{
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+}
+.input-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.form-items{
+    width: 85%;
+    padding: 10px;
+    height: 50px;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    border: 1px transparent;
+    border-radius: 5px;
+}
+.btn-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    height: 200px;
+    /* justify-content: space-evenly; */
+}
+.btn-btn-signin{
+    width: 85%;
+    padding: 10px;
+
+    height: 45px;
+    border: 1px transparent;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.btn-btn-signin:hover{
+    background-color: rgb(180, 2, 2);
+}
+.check-box-item{
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    color: rgb(105, 104, 104);
+    margin: 0;
+}
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    /* margin-left: -22px; */
+}
+.need-help-para{
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    width: 30%;
+    color: rgb(105, 104, 104);
+    margin: 0;
+}
+.check-box-cont{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.container{
+   margin-left: -15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-right: 0px;
+}
+::placeholder{
+    color: rgb(105, 104, 104);
+    font-size: 16px;
+    font-weight: 500;
+}
+input[type="text"]{
+    outline: 0px;
+}
+.sign-up-now{
+    color: rgb(97, 93, 93);
+    font-size: 15px;
+
+}
+.signup-link{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+.error{
+    color: rgb(253, 253, 253);
+    height: 20px;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+@media only screen and (max-width:800px){
+    #form-container{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+    }
+    .btn-items{
+        margin-top: -6rem;
+    }
+}
