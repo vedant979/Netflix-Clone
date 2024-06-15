@@ -8,7 +8,7 @@ I have used TMDB for fetching movie details.
 
 I have also Added Authentication using Google Firebase. 
 
-Deployed it using Netlify [here](https://graphics-netflix.netlify.app/).
+Deployed it using Netlify [here](https://66369c10822f9440f21cb1fb--resplendent-narwhal-26e58c.netlify.app/).
 
 ## Demo 
 
